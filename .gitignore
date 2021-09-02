@@ -1,0 +1,16 @@
+gradle/*
+.project/*
+.project
+.settings/*
+bin/*
+build/*
+.DS_Store
+.classpath
+.project
+/build/
+/.gradle/
+node_modules/*
+.idea/
+visitantx-api.iml
+target/
+out/
