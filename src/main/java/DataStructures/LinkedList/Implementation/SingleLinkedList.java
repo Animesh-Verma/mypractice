@@ -13,8 +13,9 @@ public class SingleLinkedList {
         linkedList.insert(linkedList,60);
 //
         linkedList.printList(linkedList);
+        //linkedList.insertAfter(linkedList,40,90);
         linkedList.deleteByKey(linkedList,30);
-        linkedList.printList(linkedList);
+       linkedList.printList(linkedList);
 
 //        //System.out.println(linkedList.read(6));
 //        linkedList.rotate(linkedList.head,4);
