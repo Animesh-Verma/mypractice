@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 
 public class ThroughputHttpServer {
     private static final String inputFile = "src/main/resources/throughput/war_and_peace.txt";
-    public static final int NO_OF_THREAD = 1;
+    public static final int NO_OF_THREAD = 4;
 
     public static void main(String[] args) throws IOException {
         String text = new String(Files.readAllBytes(Paths.get(inputFile)));
@@ -41,7 +41,6 @@ public class ThroughputHttpServer {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
             String query = exchange.getRequestURI().getQuery();
-            System.out.println(query);
             String[] keyvalue = query.split("=");
             String action = keyvalue[0];
             String word = keyvalue[1];
